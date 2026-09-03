@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What is a Chapter? — Business Education Association of Mongolia</title>
 <link rel="icon" type="image/jpeg" href="/uploads/beam-pfp.jpg">
-<style>html, body { margin: 0; }</style>
+<style>
+  html, body { margin: 0; }
+  .pdf-embed { display: block; }
+  .pdf-mobile-open { display: none; }
+  @media (max-width: 700px) {
+    .pdf-embed { display: none; }
+    .pdf-mobile-open { display: flex; }
+  }
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
@@ -28,7 +36,11 @@
 
     <div style="width:100%;max-width:900px;flex:1;min-height:70vh;display:flex;flex-direction:column;gap:14px;">
       <a href="/uploads/beam-chapters-launch-presentation.pdf" download style="align-self:flex-end;color:oklch(0.78 0.14 85);font-size:14px;font-weight:600;text-decoration:none;">Download PDF &darr;</a>
-      <iframe src="/uploads/beam-chapters-launch-presentation.pdf" title="What is a Chapter? presentation" style="width:100%;flex:1;min-height:70vh;border:none;border-radius:16px;background:oklch(0.95 0.01 290);"></iframe>
+      <iframe class="pdf-embed" src="/uploads/beam-chapters-launch-presentation.pdf" title="What is a Chapter? presentation" style="width:100%;flex:1;min-height:70vh;border:none;border-radius:16px;background:oklch(0.95 0.01 290);"></iframe>
+      <div class="pdf-mobile-open" style="flex:1;min-height:60vh;flex-direction:column;align-items:center;justify-content:center;gap:16px;border-radius:16px;background:oklch(0.26 0.08 290);padding:32px;text-align:center;">
+        <div style="color:oklch(0.85 0.02 290);font-size:14px;line-height:1.6;max-width:320px;">Your browser can&rsquo;t preview PDFs inline. Open it below instead.</div>
+        <a href="/uploads/beam-chapters-launch-presentation.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:100px;background:oklch(0.78 0.14 85);color:oklch(0.18 0.06 290);font-weight:700;font-size:15px;text-decoration:none;">Open PDF</a>
+      </div>
     </div>
   </div>
 </div>
