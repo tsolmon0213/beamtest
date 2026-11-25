@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Judging Rubric — Business Education Association of Mongolia</title>
+<link rel="icon" type="image/jpeg" href="/uploads/beam-pfp.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: oklch(0.22 0.09 290);
+    --card: oklch(0.26 0.08 290);
+    --text: oklch(0.97 0.01 290);
+    --muted: oklch(0.75 0.02 290);
+    --en: oklch(0.78 0.14 85);   /* gold  */
+    --mn: oklch(0.78 0.11 205);  /* teal  */
+    --gutter: clamp(16px, 5vw, 56px);
+  }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Manrope', sans-serif; }
+  a { color: inherit; }
+
+  .nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 20px var(--gutter); }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand img { width: 40px; height: 40px; border-radius: 10px; object-fit: cover; }
+  .brand span { font-weight: 800; font-size: 20px; letter-spacing: 0.03em; }
+  .back { color: oklch(0.8 0.03 290); font-size: 14px; font-weight: 600; text-decoration: none; }
+
+  .head { text-align: center; padding: 8px var(--gutter) 28px; }
+  .head h1 { margin: 0; font-size: clamp(26px, 4vw, 42px); font-weight: 800; letter-spacing: 0.01em; line-height: 1.2; }
+  .head p { margin: 12px 0 0; font-size: clamp(14px, 1.6vw, 17px); color: var(--muted); line-height: 1.6; }
+
+  /* Jump chips: only useful when the two versions are stacked (phones / tablets) */
+  .jump { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+  .jump a { text-decoration: none; font-weight: 700; font-size: 14px; padding: 10px 18px; border-radius: 100px; border: 1.5px solid; }
+  .jump a.en { color: var(--en); border-color: var(--en); }
+  .jump a.mn { color: var(--mn); border-color: var(--mn); }
+
+  .wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 56px; max-width: 1320px; margin: 0 auto; padding: 0 var(--gutter) 72px; }
+  @media (min-width: 1000px) {
+    .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; align-items: start; }
+    .jump { display: none; }
+  }
+
+  .col { scroll-margin-top: 16px; }
+  .col-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; border-radius: 16px; background: var(--card); padding: 18px 20px; margin-bottom: 18px; border-top: 5px solid var(--accent); }
+  .col.en { --accent: var(--en); }
+  .col.mn { --accent: var(--mn); }
+  .badge { flex: none; min-width: 52px; text-align: center; font-weight: 800; font-size: 20px; letter-spacing: 0.06em; padding: 8px 14px; border-radius: 12px; background: var(--accent); color: oklch(0.18 0.06 290); }
+  .col-title { flex: 1 1 200px; min-width: 0; }
+  .col-title b { display: block; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  .col-title span { display: block; margin-top: 4px; font-size: 18px; font-weight: 700; line-height: 1.3; }
+  .open { font-size: 13px; font-weight: 600; text-decoration: underline; color: var(--muted); white-space: nowrap; }
+
+  .pages { display: flex; flex-direction: column; gap: 16px; }
+  .page { position: relative; width: 100%; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 28px rgba(0,0,0,0.28); border-left: 5px solid var(--accent); box-sizing: border-box; }
+  .page canvas { display: block; width: 100%; height: 100%; }
+  .page .tag { position: absolute; top: 8px; right: 8px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 6px; background: var(--accent); color: oklch(0.18 0.06 290); opacity: 0.92; pointer-events: none; }
+  .loading, .error { color: var(--muted); font-size: 14px; padding: 24px; text-align: center; line-height: 1.6; }
+  .loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: oklch(0.45 0.03 290); }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <a class="brand" href="/"><img src="/uploads/beam-pfp.jpg" alt="Beam logo"><span>BEAM</span></a>
+  <a class="back" href="/">← Back to home / Нүүр хуудас руу буцах</a>
+</div>
+
+<div class="head">
+  <h1>BEAM × UFE Trading Challenge</h1>
+  <p>Participant Judging Rubric · Оролцогчдыг дүгнэх шалгуур</p>
+  <div class="jump">
+    <a class="en" href="#en">English ↓</a>
+    <a class="mn" href="#mn">Монгол хэл ↓</a>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <section class="col en" id="en" lang="en" data-pdf="/uploads/beam-ufe-judging-rubric-en.pdf" data-label="English version" data-tag="EN">
+    <div class="col-head">
+      <div class="badge">EN</div>
+      <div class="col-title"><b>English version</b><span>Participant Judging Rubric</span></div>
+      <a class="open" href="/uploads/beam-ufe-judging-rubric-en.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+    </div>
+    <div class="pages"><div class="loading" style="position:static">Loading…</div></div>
+  </section>
+
+  <section class="col mn" id="mn" lang="mn" data-pdf="/uploads/beam-ufe-judging-rubric-mn.pdf" data-label="Монгол хувилбар" data-tag="MN">
+    <div class="col-head">
+      <div class="badge">MN</div>
+      <div class="col-title"><b>Монгол хувилбар</b><span>Оролцогчдыг дүгнэх шалгуур</span></div>
+      <a class="open" href="/uploads/beam-ufe-judging-rubric-mn.pdf" target="_blank" rel="noopener">PDF нээх ↗</a>
+    </div>
+    <div class="pages"><div class="loading" style="position:static">Ачаалж байна…</div></div>
+  </section>
+
+</main>
+
+<noscript>
+  <p style="text-align:center;color:#fff;padding:0 16px 48px;line-height:2">
+    JavaScript is needed to show the documents here. Open them directly:<br>
+    <a href="/uploads/beam-ufe-judging-rubric-en.pdf">English (PDF)</a> ·
+    <a href="/uploads/beam-ufe-judging-rubric-mn.pdf">Монгол (PDF)</a>
+  </p>
+</noscript>
+
+<script src="/assets/pdfjs/pdf.min.js"></script>
+<script>
+(function () {
+  if (!window.pdfjsLib) { fail('Could not load the PDF viewer.'); return; }
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '/assets/pdfjs/pdf.worker.min.js';
+
+  var sections = Array.prototype.slice.call(document.querySelectorAll('[data-pdf]'));
+  var all = [];                       // every page placeholder, for re-rendering on resize
+  var io = ('IntersectionObserver' in window)
+    ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { io.unobserve(e.target); draw(e.target.__p); } });
+      }, { rootMargin: '800px 0px' })
+    : null;
+
+  function fail(msg, sec) {
+    var box = sec ? sec.querySelector('.pages') : document.querySelector('.wrap');
+    box.innerHTML = '<div class="error">' + msg + (sec ? ' <a href="' + sec.dataset.pdf + '" target="_blank" rel="noopener">Open PDF ↗</a>' : '') + '</div>';
+  }
+
+  function draw(p) {
+    var cssW = p.el.clientWidth;
+    if (!cssW) return;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var scale = (cssW / p.base.width) * dpr;
+    var vp = p.page.getViewport({ scale: scale });
+    var canvas = p.el.querySelector('canvas');
+    if (p.task) { try { p.task.cancel(); } catch (e) {} }
+    canvas.width = Math.floor(vp.width);
+    canvas.height = Math.floor(vp.height);
+    p.drawnW = cssW;
+    p.task = p.page.render({ canvasContext: canvas.getContext('2d'), viewport: vp });
+    p.task.promise.then(function () {
+      var l = p.el.querySelector('.loading'); if (l) l.remove();
+    }).catch(function () {});
+  }
+
+  sections.forEach(function (sec) {
+    var holder = sec.querySelector('.pages');
+    pdfjsLib.getDocument({ url: sec.dataset.pdf }).promise.then(function (doc) {
+      holder.innerHTML = '';
+      var jobs = [];
+      for (var n = 1; n <= doc.numPages; n++) jobs.push(doc.getPage(n));
+      return Promise.all(jobs).then(function (pages) {
+        pages.forEach(function (page, i) {
+          var base = page.getViewport({ scale: 1 });
+          var el = document.createElement('div');
+          el.className = 'page';
+          el.style.aspectRatio = base.width + ' / ' + base.height;
+          el.setAttribute('role', 'img');
+          el.setAttribute('aria-label', sec.dataset.label + ' — ' + (i + 1) + ' / ' + doc.numPages);
+          el.innerHTML = '<canvas></canvas><div class="loading">…</div><div class="tag">' + sec.dataset.tag + ' · ' + (i + 1) + '/' + doc.numPages + '</div>';
+          holder.appendChild(el);
+          var p = { el: el, page: page, base: base, task: null, drawnW: 0 };
+          el.__p = p;
+          all.push(p);
+          if (io) io.observe(el); else draw(p);
+        });
+      });
+    }).catch(function () { fail('Could not load this document.', sec); });
+  });
+
+  // Re-render sharply when the width changes (rotate phone, resize window)
+  var t;
+  window.addEventListener('resize', function () {
+    clearTimeout(t);
+    t = setTimeout(function () {
+      all.forEach(function (p) {
+        if (p.drawnW && Math.abs(p.el.clientWidth - p.drawnW) > 2) draw(p);
+      });
+    }, 250);
+  });
+})();
+</script>
+</body>
+</html>
